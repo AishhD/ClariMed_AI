@@ -1,17 +1,16 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="ClariMed" src="/assets/banner.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# ClariMed - Your diagonsis translator!
 
-This contains everything you need to run your app locally.
+Have you ever left a doctor's office more confused than when you walked in?
+Many patients struggle to understand their diagnoses, lab results, and discharge instructions because these documents are often filled with highly technical medical terminology. For clinicians, this creates an unintended burden: patients return for clarification visits, call for follow‑up explanations, or fail to adhere to recommended care plans simply because they didn’t fully grasp the information provided. This communication gap represents a significant inefficiency in the healthcare system—driving avoidable appointments, increasing operational costs, and contributing to poorer health outcomes. 
 
-View your app in AI Studio: https://ai.studio/apps/ffda9bd4-4b16-4f41-b84a-1118d4568eba
 
 ## Run Locally
 
 **Prerequisites:**  Node.js
-
 
 1. Install dependencies:
    `npm install`
