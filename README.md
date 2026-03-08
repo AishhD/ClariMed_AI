@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="ClariMed" src="/assets/banner.png" />
+<img width="1200" height="475" alt="ClariMed" src="assets/clarimedimage1.png" />
 </div>
 
 # ClariMed - Your diagonsis translator!
