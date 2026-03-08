@@ -1,0 +1,7 @@
+{
+  "name": "ClariMed",
+  "description": "An intelligent medical assistant that analyzes patient diagnostic documents and provides multi-modal feedback including summaries, audio explanations, and nearby care maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

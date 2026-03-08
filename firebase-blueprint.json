@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A patient user of the application.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique Firebase Auth ID." },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Analysis": {
+      "title": "Analysis",
+      "description": "A diagnostic analysis record.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The ID of the user who owns this analysis." },
+        "fileName": { "type": "string" },
+        "summary": { "type": "string" },
+        "bulletPoints": { "type": "array", "items": { "type": "string" } },
+        "recommendations": { "type": "array", "items": { "type": "string" } },
+        "glossary": { 
+          "type": "array", 
+          "items": { 
+            "type": "object",
+            "properties": {
+              "term": { "type": "string" },
+              "definition": { "type": "string" }
+            }
+          } 
+        },
+        "questionsForDoctor": { "type": "array", "items": { "type": "string" } },
+        "audioBase64": { "type": "string", "description": "Generated explanation audio." },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "summary", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents."
+    },
+    "/analyses/{analysisId}": {
+      "schema": "Analysis",
+      "description": "Diagnostic analysis results."
+    }
+  }
+}
